@@ -1,7 +1,7 @@
 cordova-plugin-firephoneheadtracking
 ====================================
 
-A Cordova plugin to handle Amazon's FirePhone Head Tracking using their exact same WebApp JavaScript API. You can use this plugin if you want to generate a standard Amazon Android App and still use the Head Tracking native API from JavaScript. As The API is the same as the one Amazon exposes in the WebApp environment, your App/Code will be compatible if for some reason you want to develop an Amazon WebApp in the future/too.
+A Cordova plugin to handle Amazon's FirePhone Head Tracking using their exact same WebApp JavaScript API. You can use this plugin if you want to generate a standard Amazon Android App and still uses the Head Tracking native API from JavaScript. As The API is the same as the one Amazon exposes in their WebApp environment, your App/Code will be 100% compatible if you want to develop an Amazon WebApp too.
 
 ##How to use it
 
@@ -17,18 +17,18 @@ This plugin has been published in the Cordova Plugin Registry (Plugman) so addin
 
 4.- The API that is exposed is exactly the same as the JavaScrip API Amazon has released for their Amazon Web Apps. You can follow a complete tutorial at the following link: https://developer.amazon.com/public/community/post/TxX1C30LEEOJP2/Adding-Dynamic-Perspective-to-Your-HTML5-Games-Tutorial
 
-NOTE: I haven't been able to find very good API documentation about the Amazon HTML5 Head Tracking API although if you download the full FirePhone SDK, it provides a nice guide in PDF format that I have included (doc folder) in this repository.
+NOTE: I haven't been able to find very good online API documentation about the Amazon HTML5 Head Tracking API, although if you download the full FirePhone SDK, it provides a great guide on how to use it in PDF format that I have included inside the doc folder in this repository.
 
 ###Modifications in your application
 
-Not many modifications are needed in order to be able use the the plugin. Indeed only the inclusion of the "FirePhoneHeadTracking.js" file is needed (and even this requirement might be removed in the future by using Cordova plugin modules). 
+Not many modifications are needed in order to be able use the the plugin. Indeed only the inclusion of the "FirePhoneHeadTracking.js" file is required (and even this requirement might be removed in the future by using Cordova plugin modules). 
 
 	...
 	<head>
 		<script src="FirePhoneHeadTracking.js"></script>
 	...
 
-IMPORTANT: The whole API (the registering head tracking event listeners) won't be available until the Cordova `deviceready` event is fired, so make sure that your application does not try to call use it before that event.
+IMPORTANT: The whole API (the registering head tracking event listeners) won't be available until the Cordova `deviceready` event is fired, so make sure that your application does not try to call or use it before that event.
 
 ##Future improvements
 
