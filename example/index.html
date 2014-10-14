@@ -1,0 +1,31 @@
+<html>
+	<head>
+<!-- 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/> 
+ -->	</head>
+	<body style="margin:0; padding:0; overflow:hidden;">
+		<script src="cordova.js"></script>
+		<script src="FirePhoneHeadTracking.js"></script>
+		<script>
+
+            (function normalizeRequestAnimationFrame() {
+	            var raf = 
+	            	window.requestAnimationFrame || 
+	            	window.webkitRequestAnimationFrame ||
+	            	window.mozRequestAnimationFrame ||
+	            	window.oRequestAnimationFrame ||
+	            	window.msRequestAnimationFrame ||
+	            	function(callback) {
+	                	window.setTimeout( callback, 1000 / 60 );
+	            	};
+	            window.requestAnimationFrame = raf;
+            })();
+
+            function startTest() {
+
+            }
+
+			document.addEventListener("deviceready", startTest);
+
+		</script>
+	</body>
+</html>
